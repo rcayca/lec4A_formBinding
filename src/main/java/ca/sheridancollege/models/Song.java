@@ -8,10 +8,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Songs {
+public class Song {
     private Long id;
     private String title;
     private String artist;
     private String genre;
     private final String[] genres = {"Spoken Word", "Electronic", "Classical", "Country"};
+
 }
