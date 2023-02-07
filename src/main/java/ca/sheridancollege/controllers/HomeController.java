@@ -13,13 +13,15 @@ public class HomeController {
     @GetMapping("/")
     public String index(Model model) {
 
-        Song song = new Song();
+        public Song song = new Song();
+        private String s = "hello";
         model.addAttribute("newSong", song);
         return "index";
     }
 
     @PostMapping("/addSong")
     public String addSong(@ModelAttribute Song song, Model model) {
+        int i = 0;
         System.out.println(song);
         SongStorage.songList.add(song);
         model.addAttribute("songList", SongStorage.songList);
