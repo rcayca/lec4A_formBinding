@@ -1,8 +1,10 @@
 HELP.md
+testfolder
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+testfolder
 
 ### STS ###
 .apt_generated
@@ -33,3 +35,4 @@ build/
 .vscode/
 test.html
 test2.html
+testfolder
